@@ -1,0 +1,102 @@
+
+    
+        header{
+            background-color: #b87d7d;
+            height: 70px;
+            width: 100%;
+            float: left;
+        }
+        nav{
+            background-color: #b87d7d;
+            width: 65%;
+            height: 1000px;
+            float: left;
+            margin-top: 10px;
+        }
+        article{
+            background-color: #b87d7d;
+            width: 30%;
+            height: 500px;
+            float: right;
+        }
+        caja2 , .caja1{
+            margin-top: 20px;
+        }
+        footer{
+            background-color: #b87d7d;
+            width: 100%;
+            float: left;
+            height: 100px;
+            margin-top: 5px;
+        }
+
+
+        
+    /**    **/
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background: #7fe0dc;
+        }
+        
+        header{
+            width: 100%;
+        }
+        
+        .navegacion{
+            width: 1000px;
+            margin: 30px auto;
+            background: #fff;
+        }
+        
+        .navegacion ul{
+            list-style: none;
+        }
+        
+        .menu > li{
+            position: relative;
+            display: inline-block;
+        }
+        
+        .menu > li > a{
+            display: block;
+            padding: 15px 20px;
+            color: #7fe0dc;
+            font-family: 'Open sans';
+            text-decoration: none;
+        }
+        
+        .menu li a:hover{
+            color: #CE7D35;
+            transition: all .3s;
+        }
+        
+        /* Submenu*/
+        
+        .submenu{
+            position: absolute;
+            background: #333333;
+            width: 120%;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 1.5s;
+        }
+        
+        .submenu li a{
+            display: block;
+            padding: 15px;
+            color: #fff;
+            font-family: 'Open sans';
+            text-decoration: none;
+        }
+        
+        .menu li:hover .submenu{
+            visibility: visible;
+            opacity: 1;
+        }
